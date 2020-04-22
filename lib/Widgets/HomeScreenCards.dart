@@ -4,7 +4,6 @@ import 'package:kwizzo/constants/Constants.dart';
 class HomeScreenCard extends StatelessWidget {
   Gradient gradient;
   String title;
-
   HomeScreenCard({this.gradient, this.title});
 
   @override
@@ -13,13 +12,7 @@ class HomeScreenCard extends StatelessWidget {
     double w = MediaQuery.of(context).size.width;
     return Container(
       decoration: BoxDecoration(
-        boxShadow: [
-          BoxShadow(
-              color: Colors.black54,
-              offset: Offset(5, 5),
-              blurRadius: 10.0,
-              spreadRadius: 2)
-        ],
+        boxShadow: [knormalshadow],
         gradient: gradient,
         borderRadius: BorderRadius.circular(5.0),
       ),

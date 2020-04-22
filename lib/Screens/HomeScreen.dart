@@ -12,15 +12,24 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white70,
+      backgroundColor: Colors.black,
       body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage('assets/1.gif'), fit: BoxFit.fill),
+        ),
         child: Center(
           child: SingleChildScrollView(
             child: Column(
               children: [
-                HomeScreenCard(
-                  gradient: klinearblue,
-                  title: 'Create Quiz',
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, 'Newquizname');
+                  },
+                  child: HomeScreenCard(
+                    gradient: klinearblue,
+                    title: 'Create Quiz',
+                  ),
                 ),
                 HomeScreenCard(
                   gradient: klinearorange,
