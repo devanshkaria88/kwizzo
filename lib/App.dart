@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kwizzo/Screens/HomeScreen.dart';
-import 'package:kwizzo/Screens/LginScreen.dart';
+import 'package:kwizzo/Screens/LoginScreen.dart';
+import 'package:kwizzo/Screens/NewQuestion.dart';
 import 'package:kwizzo/Screens/NewQuizName.dart';
 
 class MyApp extends StatelessWidget {
